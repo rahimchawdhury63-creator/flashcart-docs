@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<!--
+  =============================================================================
+  FLASHCART DOCS — Documentation Portal
+  =============================================================================
+  
+  Bilingual documentation portal for FlashCart platform.
+  Provides guides, tutorials, and reference material for both
+  customers and partner vendors.
+  
+  No OneSignal. No ImgBB. Lightweight and fast-loading.
+  
+  Developer: Rizwan Rahim Chowdhury
+  Powered by: Bangladesh Software Development Community (BSDC)
+  =============================================================================
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ================================================================== -->
+  <!-- PRIMARY SEO META TAGS                                               -->
+  <!-- ================================================================== -->
+  <title>FlashCart Documentation - Guides & Tutorials | Bangladesh Delivery Platform</title>
+  <meta name="description" content="Complete documentation for FlashCart - Bangladesh's free delivery platform. Learn how to order, manage your store, optimize SEO, set up notifications, and more. Bilingual guides in Bangla and English. ফ্ল্যাশকার্ট ডকুমেন্টেশন।" />
+  <meta name="keywords" content="FlashCart docs, FlashCart documentation, FlashCart guide, FlashCart tutorial, food delivery guide Bangladesh, partner guide, ফ্ল্যাশকার্ট গাইড, ফ্ল্যাশকার্ট ডকুমেন্টেশন" />
+  <meta name="author" content="Rizwan Rahim Chowdhury" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.flashcart.bsdc.info.bd/" />
+
+  <link rel="alternate" hreflang="bn" href="https://docs.flashcart.bsdc.info.bd/?lang=bn" />
+  <link rel="alternate" hreflang="en" href="https://docs.flashcart.bsdc.info.bd/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.flashcart.bsdc.info.bd/" />
+
+  <!-- ================================================================== -->
+  <!-- OPEN GRAPH                                                          -->
+  <!-- ================================================================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FlashCart Documentation - Guides & Tutorials" />
+  <meta property="og:description" content="Complete bilingual documentation for FlashCart delivery platform. Bangla and English guides." />
+  <meta property="og:url" content="https://docs.flashcart.bsdc.info.bd/" />
+  <meta property="og:site_name" content="FlashCart Docs" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:image" content="https://flashcart.bsdc.info.bd/icon-512x512.png" />
+
+  <!-- ================================================================== -->
+  <!-- TWITTER CARD                                                        -->
+  <!-- ================================================================== -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FlashCart Documentation" />
+  <meta name="twitter:description" content="Guides and tutorials for FlashCart delivery platform." />
+
+  <!-- ================================================================== -->
+  <!-- FAVICON & PWA                                                       -->
+  <!-- ================================================================== -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#1B5E20" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="FlashCart Docs" />
+
+  <!-- ================================================================== -->
+  <!-- PRECONNECT & FONTS                                                  -->
+  <!-- ================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ================================================================== -->
+  <!-- SCHEMA.ORG — Docs Portal                                           -->
+  <!-- ================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FlashCart Documentation",
+    "url": "https://docs.flashcart.bsdc.info.bd",
+    "description": "Complete bilingual documentation for FlashCart delivery platform in Bangladesh.",
+    "inLanguage": ["bn", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://docs.flashcart.bsdc.info.bd/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bangladesh Software Development Community",
+      "url": "https://www.bsdc.info.bd"
+    }
+  }
+  </script>
+
+  <!-- ================================================================== -->
+  <!-- CRITICAL INLINE CSS                                                 -->
+  <!-- ================================================================== -->
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-primary: #1B5E20;
+      --color-white: #FFFFFF;
+      --color-off-white: #F8FAF8;
+      --color-text-primary: #1A1A1A;
+      --font-bangla: 'Hind Siliguri', 'SolaimanLipi', sans-serif;
+      --font-english: 'Inter', 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--font-bangla);
+      background-color: var(--color-off-white);
+      color: var(--color-text-primary);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    #root {
+      min-height: 100vh;
+    }
+
+    .app-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
+      color: var(--color-white);
+      font-family: var(--font-english);
+    }
+
+    .app-loading__logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 20px;
+      animation: pulse-loading 1.5s ease-in-out infinite;
+    }
+
+    .app-loading__text {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .app-loading__badge {
+      font-size: 11px;
+      background: rgba(255,255,255,0.2);
+      padding: 2px 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .app-loading__spinner {
+      width: 36px;
+      height: 36px;
+      margin-top: 28px;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin-loading 0.8s linear infinite;
+    }
+
+    @keyframes pulse-loading {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+
+    @keyframes spin-loading {
+      to { transform: rotate(360deg); }
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 8px 16px;
+      border-radius: 0 0 4px 4px;
+      z-index: 10000;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="root">
+    <div class="app-loading" aria-label="Loading FlashCart Documentation">
+      <svg class="app-loading__logo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="10" y="20" width="60" height="40" rx="8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2.5"/>
+        <path d="M44 18L32 42h10L36 62l16-26H42L48 18h-4z" fill="white"/>
+        <circle cx="28" cy="66" r="5" fill="white" opacity="0.9"/>
+        <circle cx="52" cy="66" r="5" fill="white" opacity="0.9"/>
+        <path d="M10 24L4 12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div class="app-loading__text">FlashCart</div>
+      <div class="app-loading__badge">Documentation</div>
+      <div class="app-loading__spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div style="max-width:800px;margin:40px auto;padding:20px;font-family:'Hind Siliguri',sans-serif;">
+      <h1 style="color:#1B5E20;">FlashCart Documentation</h1>
+      <p>Complete documentation for FlashCart delivery platform. Guides in Bangla and English.</p>
+      <p>ফ্ল্যাশকার্ট ডেলিভারি প্ল্যাটফর্মের সম্পূর্ণ ডকুমেন্টেশন। বাংলা ও ইংরেজিতে গাইড।</p>
+      <p>Please enable JavaScript to browse documentation.</p>
+      <p><a href="https://www.bsdc.info.bd" style="color:#1B5E20;">Powered by BSDC</a></p>
+    </div>
+  </noscript>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
