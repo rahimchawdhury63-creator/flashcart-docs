@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.flashcart.bsdc.info.bd/sitemap.xml
